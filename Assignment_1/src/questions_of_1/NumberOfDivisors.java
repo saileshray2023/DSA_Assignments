@@ -1,7 +1,6 @@
 package questions_of_1;
 
 import java.util.Scanner;
-//hubbi
 public class NumberOfDivisors {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
