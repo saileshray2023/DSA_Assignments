@@ -1,0 +1,7 @@
+Similar to git nah, the git uncommit alias is helpful if you haven't pushed code to a remote repository ,
+and you want to remove the commit:
+
+[alias]
+    uncommit = reset --soft HEAD~1
+This is just a shortcut for 'git reset --soft HEAD~1', which essentially rewinds the branch by one commit
+and keeps the changes from that commit in the staging area.
