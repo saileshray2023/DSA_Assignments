@@ -6,7 +6,7 @@ public class Q8 implements ISports{
         Test t=new Test();
         t.inputDetails();t.showDetails();
         grandTotal=t.mark1+t.mark2+score1+score2;
-        System.out.println("Grand Total is :"+grandTotal);
+        System.out.println("\tGrand Total is :"+grandTotal);
 
 
 

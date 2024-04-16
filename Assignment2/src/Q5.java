@@ -1,5 +1,4 @@
 import java.util.Scanner;
-
 class Person1 {
     String name;
     int age;
@@ -7,9 +6,6 @@ class Person1 {
         this.name=name;
         this.age=age;
     }
-
-
-
 }
 class Employee extends Person1{
     int eID;
@@ -21,9 +17,7 @@ class Employee extends Person1{
     }
     void empDisplay(){
         System.out.printf("Name:%s Age:%d Eid:%d Salary:%f",name,age,eID,salary);
-
     }
-
 }
 public class Q5 {
     public static void main(String[] args) {

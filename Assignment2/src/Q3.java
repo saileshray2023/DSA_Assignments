@@ -1,5 +1,5 @@
 import java.util.*;
-class Product{
+  class Product{
     long prodID;
     double price;
     int quantity;
@@ -15,7 +15,9 @@ class Product{
         System.out.println("Product Id:"+prodID+"\tprice:"+price+"\tquantity:"+quantity);
     }
 
-}public class Q3 {
+}
+
+public class Q3 {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         Product []objArray=new Product[5];

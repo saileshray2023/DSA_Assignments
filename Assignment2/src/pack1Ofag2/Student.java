@@ -3,8 +3,8 @@ package pack1Ofag2;
 import java.util.Scanner;
 
 public class Student  {
-     protected String name;
-     protected int rollNo;
+     String name;
+     int rollNo;
    public void inputDetails(){
        Scanner sc=new Scanner(System.in);
        System.out.print("Enter Name:");
@@ -15,7 +15,7 @@ public class Student  {
 
     }
      public void showDetails(){
-         System.out.printf("%nName:%s RollNo:%d",name,rollNo);
+         System.out.printf("Name:%s RollNo:%d",name,rollNo);
     }
 
 }
