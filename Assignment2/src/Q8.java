@@ -1,6 +1,6 @@
 import pack1Ofag2.*;
 import pack2Ofag2.*;
-public class Q8 implements ISports{
+public class Q8  implements ISports{
     public static void main(String[] args) {
         int grandTotal;
         Test t=new Test();
