@@ -15,12 +15,13 @@ public class ExceptionFinding {
                 System.out.println(m[i]);
         }catch (InputMismatchException e){
             System.out.println("Please enter appropriate data input!! ");
-
+            sc.nextLine();
+            main(args);
         }
         catch (NegativeArraySizeException n){
             System.out.println("Array index can not be negative!!");
+            main(args);
         }
 
     }
-
 }
