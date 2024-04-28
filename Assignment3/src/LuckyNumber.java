@@ -8,7 +8,7 @@ public class LuckyNumber {
         try {
             int n=sc.nextInt();
             if(n<0)
-                throw new NumberFormatException("Lucky Number can not be zero!!😒");
+                throw new NumberFormatException("Lucky Number can not be non positive!!😒");
         }
         catch (NumberFormatException e){
             System.out.println(e.getMessage());
