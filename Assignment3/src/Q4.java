@@ -6,6 +6,7 @@ class Box<T>{
     void setInstance(T i) {
         var1=i;
     }
+    //method for var1 of type T
        T getInstance() {
         return var1;
     }
@@ -15,6 +16,7 @@ class Box<T>{
 }
 public class Q4 {
     public static void main(String[] args) {
+        //Bit 'a' of question
         Box<String> box1,box2;
         box1= new Box<>("Hello");
         box2=box1;
@@ -29,6 +31,7 @@ public class Q4 {
         box2.display();
 
 
+       // Bit 'b' of question
         Box<Integer> box3,box4;
         box3=new Box<>(5);
         box4=box3;
@@ -42,6 +45,7 @@ public class Q4 {
         System.out.println("box4:");
         box4.display();
 
+        //Bit 'c' of question
         Box<Object> obj1,obj2;
         obj1= new Box<>("Sail");
         obj2=obj1;
