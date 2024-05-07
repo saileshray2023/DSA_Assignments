@@ -52,11 +52,12 @@ public class Q4 {
         System.out.print("obj1:");obj1.display();
         System.out.print("obj2:");obj2.display();
         obj1.setInstance(5);
-        System.out.println("obj1:");
+        System.out.print("obj1:");
         obj1.display();
-        System.out.println("obj2:");obj2.display();
+        System.out.print("obj2:");obj2.display();
 
-        System.out.println(obj2.getInstance());
+
+
 
 
     }
