@@ -10,17 +10,15 @@ public class Power {
         Scanner sc=new Scanner(System.in);
         int n;
         System.out.println("Enter the number ");
-        long x= sc.nextInt();
+        long x= sc.nextLong();
         System.out.println("Enter the indices power");
-        try{
+
          n= sc.nextInt();
 
         if(n<0)
             throw new RuntimeException("Indices power can not be negative");
         System.out.println("Result :"+calcPower(x,n));
-        }catch(RuntimeException e){
-            System.out.println("Results can not be obtained");
-        }
+
 
     }
 }
