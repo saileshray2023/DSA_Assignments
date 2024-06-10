@@ -17,8 +17,8 @@ class A4Q1 {
         n.regdNo = sc.nextInt();
         n.mark = sc.nextFloat();
         n.next = null;
-        start = n;
-        l = n;
+        start = n;//start can be referred as head, It is now pointing to new node
+        l = n;// l is a temporary Node reference variable to keep point to latest node
 
         while(true) {
             System.out.println("Do you want to create more nodes (y/n): ");
@@ -33,7 +33,7 @@ class A4Q1 {
             n.mark = sc.nextFloat();
             n.next = null;
             l.next = n;
-            l = n;
+            l = n;//The l reference is updated to point to the new node (making it the new “last” node).
         }
         return start;
     }
@@ -317,10 +317,12 @@ class A4Q1 {
             System.out.println(" 9. Update mark");
             System.out.println("10. Sort list");
             System.out.println("11. Count list size");
+
             System.out.println("12. Reverse list");
             System.out.println("13. Display list");
             System.out.println("14. Exit");
             System.out.print("\nEnter choice: ");
+
 
             choice = sc.nextInt();
 
