@@ -16,6 +16,6 @@ public class Fibonacci {
         System.out.println("Enter n value:");
         Scanner sc=new Scanner(System.in);
         int n= sc.nextInt();
-        System.out.println(fib(n)[0]);
+              System.out.println(fib(n)[0]);
     }
 }
