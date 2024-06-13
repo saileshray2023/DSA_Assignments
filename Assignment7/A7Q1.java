@@ -8,14 +8,14 @@ public class A7Q1 {
     public static int rear = -1;
     static Scanner sc = new Scanner(System.in);
 
-    public static boolean is_full(int q[]) {
+    public static boolean is_full(int[] q) {
         return (rear + 1) % q.length == front;
     }
-    public static boolean is_empty(int q[]) {
+    public static boolean is_empty() {
         return front == -1;
     }
 
-    public static void insert(int q[]) {
+    public static void insert(int[] q) {
         if(is_full(q))
             System.out.println("Unable to insert element into the queue - queue is full!");
         else {
@@ -28,8 +28,8 @@ public class A7Q1 {
         }
     }
 
-    public static void delete(int q[]) {
-        if(is_empty(q))
+    public static void delete(int[] q) {
+        if(is_empty())
             System.out.println("Unable to delete element from the queue - queue is empty!");
         else {
             System.out.println("Deleting " + q[front] + " from queue.");
@@ -40,8 +40,8 @@ public class A7Q1 {
         }
     }
 
-    public static void display(int q[]) {
-        if(is_empty(q))
+    public static void display(int []q) {
+        if(is_empty())
             System.out.println("Unable to display queue elements - queue is empty!");
         else {
             int temp = front;
@@ -55,8 +55,8 @@ public class A7Q1 {
     }
 
 
-    public static void main(String args[]) {
-        int queue[] = new int[MAX];
+    public static void main(String[] args) {
+        int[] queue = new int[MAX];
 
         while(true) {
             System.out.println("***MENU***");
