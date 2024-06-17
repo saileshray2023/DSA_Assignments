@@ -6,7 +6,7 @@ public class A6Q1 {
     public static final int MAX=10;
     public static Scanner sc = new Scanner(System.in);
 
-    public static int push(int S[], int top) {
+    public static int push(int[] S, int top) {
         if(isFull(top))
             System.out.println("Unable to push more elements onto stack - stack is full!");
         else {
@@ -17,7 +17,7 @@ public class A6Q1 {
         return top;
     }
 
-    public static int pop(int S[], int top) {
+    public static int pop(int[] S, int top) {
         if(isEmpty(top))
             System.out.println("Unable to pop element off stack - stack is empty!");
         else
@@ -25,7 +25,7 @@ public class A6Q1 {
         return top;
     }
 
-    public static void display(int S[],int top) {
+    public static void display(int[] S, int top) {
         if(isEmpty(top))
             System.out.println("Unable to display stack elements - stack is empty!");
         else {
@@ -44,8 +44,8 @@ public class A6Q1 {
         return top == MAX - 1;
     }
 
-    public static void main(String args[]) {
-        int stack[] = new int[MAX];
+    public static void main(String[] args) {
+        int[] stack = new int[MAX];
         int top = -1;
         while(true) {
             System.out.println("***MENU***");

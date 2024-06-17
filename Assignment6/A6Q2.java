@@ -33,7 +33,7 @@ public class A6Q2 {
         return top;
     }
 
-    public static void display(Node top) {
+    public static void display(Node  top) {
         if(top == null)
             System.out.println("Unable to display stack elements - stack is empty!");
         else {
