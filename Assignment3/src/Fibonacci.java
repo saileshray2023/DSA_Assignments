@@ -10,7 +10,7 @@ public class Fibonacci {
             long[] answer={temp[0]+temp[1],temp[0]};
             return answer;
         }
-    }
+     }
 
     public static void main(String[] args) {
         System.out.println("Enter n value:");
