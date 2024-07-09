@@ -1,5 +1,5 @@
 import java.util.Scanner;
-
+//If we extend Exception the error must be caught,and handled while extending RunTimeException error can be handled using throws keyword
 class MarksOutOfBoundsException extends Exception{
     int marks;
     MarksOutOfBoundsException(int num){
