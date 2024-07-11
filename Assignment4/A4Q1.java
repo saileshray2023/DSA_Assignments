@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 class A4Q1 {
     static class Node {
-        protected int regdNo;
+        protected int regNo;
         protected float mark;
         protected Node next;
     }
@@ -14,7 +14,7 @@ class A4Q1 {
         Node n = new Node();
         Node l;
         System.out.println("Enter student information: ");
-        n.regdNo = sc.nextInt();
+        n.regNo = sc.nextInt();
         n.mark = sc.nextFloat();
         n.next = null;
         start = n;//start can be referred as head, It is now pointing to new node
@@ -29,7 +29,7 @@ class A4Q1 {
 
             n = new Node();
             System.out.println("Enter student information: ");
-            n.regdNo = sc.nextInt();
+            n.regNo = sc.nextInt();
             n.mark = sc.nextFloat();
             n.next = null;
             l.next = n;
@@ -41,7 +41,7 @@ class A4Q1 {
     public static Node insBeg(Node start) {
         Node n = new Node();
         System.out.println("Enter student information: ");
-        n.regdNo = sc.nextInt();
+        n.regNo = sc.nextInt();
         n.mark = sc.nextFloat();
         n.next = start;
         start = n;
@@ -52,7 +52,7 @@ class A4Q1 {
     public static Node insEnd(Node start) {
         Node n = new Node();
         System.out.println("Enter student information: ");
-        n.regdNo = sc.nextInt();
+        n.regNo = sc.nextInt();
         n.mark = sc.nextFloat();
         n.next = null;
 
@@ -83,7 +83,7 @@ class A4Q1 {
         else {
             Node n = new Node(), t = start;
             System.out.println("Enter student information: ");
-            n.regdNo = sc.nextInt();
+            n.regNo = sc.nextInt();
             n.mark = sc.nextFloat();
 
             for(int i = 0; i < position - 2; i++)
@@ -101,7 +101,7 @@ class A4Q1 {
             Node t = start;
             start = start.next;
             t.next = null;
-            System.out.println("Removing from list, student with registration number: " + t.regdNo + " and marks: " + t.mark);
+            System.out.println("Removing from list, student with registration number: " + t.regNo + " and marks: " + t.mark);
         }
         return start;
     }
@@ -121,7 +121,7 @@ class A4Q1 {
                 d = t.next;
                 t.next = null;
             }
-            System.out.println("Removing from list, student with registration number: " + d.regdNo + " and marks: " + d.mark);
+            System.out.println("Removing from list, student with registration number: " + d.regNo + " and marks: " + d.mark);
         }
         return start;
     }
@@ -155,12 +155,12 @@ class A4Q1 {
         t.next = d.next;
         d.next = null;
 
-        System.out.println("Removing from list, student with registration number: " + d.regdNo + " and marks: " + d.mark);
+        System.out.println("Removing from list, student with registration number: " + d.regNo + " and marks: " + d.mark);
 
         return start;
     }
 
-    public static Node delRegdNo(Node start) {
+    public static Node delRegNo(Node start) {
         if(start == null) {
             System.out.println("Unable to remove node - list is empty!");
             return start;
@@ -171,21 +171,21 @@ class A4Q1 {
 
         Node t = start, d;
 
-        if(t.regdNo == r) {
+        if(t.regNo == r) {
             d = t;
             start = start.next;
             d.next = null;
-            System.out.println("Removing from list, student with registration number: " + d.regdNo + " and marks: " + d.mark);
+            System.out.println("Removing from list, student with registration number: " + d.regNo + " and marks: " + d.mark);
         }
         else {
             boolean found = false;
             while(t.next != null) {
-                if(t.next.regdNo == r) {
+                if(t.next.regNo == r) {
                     found = true;
                     d = t.next;
                     t.next = d.next;
                     d.next = null;
-                    System.out.println("Removing from list, student with registration number: " + d.regdNo + " and marks: " + d.mark);
+                    System.out.println("Removing from list, student with registration number: " + d.regNo + " and marks: " + d.mark);
                     break;
                 }
                 t = t.next;
@@ -209,9 +209,9 @@ class A4Q1 {
 
         boolean found = false;
         while(t != null) {
-            if(t.regdNo == r) {
+            if(t.regNo == r) {
                 found = true;
-                System.out.println("Enter the updated mark of student " + t.regdNo + ": ");
+                System.out.println("Enter the updated mark of student " + t.regNo + ": ");
                 t.mark = sc.nextFloat();
                 System.out.println("Student mark updated");
                 break;
@@ -235,11 +235,11 @@ class A4Q1 {
 
                 for(int j = 0; j < count(start) - i - 1; j++) {
                     if(f.mark > s.mark) {
-                        tempInt = f.regdNo;
+                        tempInt = f.regNo;
                         tempFloat = f.mark;
-                        f.regdNo = s.regdNo;
+                        f.regNo = s.regNo;
                         f.mark = s.mark;
-                        s.regdNo = tempInt;
+                        s.regNo = tempInt;
                         s.mark = tempFloat;
                     }
                     f = f.next;
@@ -292,7 +292,7 @@ class A4Q1 {
             Node temp = start;
             System.out.println("Elements of list: ");
             while(temp != null) {
-                System.out.println(temp.regdNo + " " + temp.mark);
+                System.out.println(temp.regNo + " " + temp.mark);
                 temp = temp.next;
             }
         }
@@ -349,7 +349,7 @@ class A4Q1 {
                     start = delAny(start);
                     break;
                 case 8:
-                    start = delRegdNo(start);
+                    start = delRegNo(start);
                     break;
                 case 9:
                     search(start);
