@@ -1,10 +1,12 @@
+import java.util.Scanner;
+
 public class SwitchDemo {
     public static void main(String[] args) {
-        int itemCode=6;
+        int itemCode=new Scanner(System.in).nextInt() ;
         switch (itemCode) {
-            case 001 -> System.out.println("It's a laptop!");
-            case 002 -> System.out.println("It's a desktop!");
-            case 003, 004 -> System.out.println("It's a mobile phone!");
+            case 1 -> System.out.println("It's a laptop!");
+            case 2 -> System.out.println("It's a desktop!");
+            case 3, 4 -> System.out.println("It's a mobile phone!");
         }
     }
 }

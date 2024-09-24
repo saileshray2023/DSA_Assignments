@@ -1,4 +1,4 @@
-package Assignment4;
+package SinglyLinkedLIst;
 
 import java.util.Scanner;
 

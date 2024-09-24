@@ -3,14 +3,14 @@ import java.util.*;
 public class TestPvt {
     public static void main(String[] args) {
 
-        int retval=1;
+        int retVal =1;
         try {
-            retval=m1();
+            retVal =m1();
         }
         catch (Exception e){
             System.out.print(1);
         }finally {
-            System.out.print(retval);
+            System.out.print(retVal);
         }
 
     }
